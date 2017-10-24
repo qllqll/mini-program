@@ -1,0 +1,115 @@
+@import '../stars/stars-template.wxss';
+
+text {
+    font-size: 28rpx;
+}
+.movie-img{
+    height:238rpx;
+    width: 175rpx;
+    position: absolute;
+    top:160rpx;
+    right: 30rpx;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+    background: burlywood;
+}
+
+.head-title {
+    margin: 60rpx 35rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    color: black;
+}
+
+.head-year {
+    margin-left: 35rpx;
+    margin-bottom: 70rpx;
+}
+
+.head-like-comments {
+    display: flex;
+    flex-direction: row;
+    margin: 0 35rpx 50rpx;
+}
+
+.head-like {
+    margin-right: 15rpx;
+    color: #200;
+}
+
+.head-like-text {
+    margin-right: 45rpx;
+}
+
+.Introduction-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;    
+}
+
+.Introduction-title {
+    margin: 40rpx 35rpx;
+    color: black;
+    font-weight: bold;
+}
+
+.Introduction-text-view {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20rpx;
+    margin-left: 35rpx;
+}
+
+.Introduction-text {
+    margin-right: 12rpx;
+}
+
+.Introduction-name{
+    width: 620rpx;
+}
+
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 45rpx 35rpx;
+}
+
+.detail-text {
+    color: #666;
+    margin-top: 30rpx;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;    
+}
+
+.img-text {
+    margin: 50rpx 35rpx;
+}
+
+.img-person {
+    width: 170rpx;
+    height: 210rpx;
+    margin-right: 35rpx;
+}
+
+.scroll-view-container{
+   margin: 0 35rpx;
+}
+
+.hr{
+    background-color: #f3f3f3;
+    height: 2rpx;
+}

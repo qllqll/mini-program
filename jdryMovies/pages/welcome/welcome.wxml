@@ -1,0 +1,7 @@
+ <view class='container'>
+    <image src='/images/headIcon.png' class='header-avator'></image>
+    <text class='hell0-detail'>hello，你猜</text>
+    <view class='moto-container' catchtap="onTap">
+        <text class='moto'>开启小程序之旅</text>
+    </view>
+</view> 

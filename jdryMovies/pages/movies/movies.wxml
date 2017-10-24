@@ -1,0 +1,22 @@
+<import src="/pages/movies/movie-list/movie-list-template.wxml" />
+<import src="/pages/movies/movie-grid/movie-grid-template.wxml" />
+<view class='search-container'>
+    <icon type='search' size='23' color='black' class='search-img'></icon>
+    <input placeholder='请输入搜索内容' type='text'  bindconfirm='onBindconfirm' placeholder-class='placholder' class='input'></input>
+    <image src='/images/icon/xx.png' class='xx-img' wx:if='{{showSeacherPanel}}' catchtap='onCancelImgTap'></image>
+</view>
+<view class='container' wx:if='{{!showSeacherPanel}}'>
+    <view class='movieListTemplate'>
+        <template is="movieListTemplate" data='{{...theaters}}' />
+    </view>
+    <view class='movieListTemplate'>
+        <template is="movieListTemplate" data='{{...comingSoon}}' />
+    </view>
+    <view class='movieListTemplate'>
+        <template is="movieListTemplate" data='{{...top250}}' />
+    </view>
+</view>
+
+<view class='seach-panel' wx:if='{{showSeacherPanel}}'>
+    <template is='movieGridTemplate'  data='{{...searchResult}}' />
+</view>
